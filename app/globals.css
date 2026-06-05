@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #16395E;
+  --color-secondary: #2E86C1;
+  --color-accent-teal: #1B9C8A;
+  --color-accent-green: #3FA46A;
+  
+  --color-bg: #F7FAFC;
+  --color-surface: #FFFFFF;
+  --color-text: #1A202C;
+  --color-text-muted: #4A5568;
+  --color-border: #E2E8F0;
+  
+  --color-cta: #1B9C8A;
+  --color-cta-hover: #15806E;
+  --color-cta-emphasis: #E08A3C;
+  --color-cta-emphasis-hover: #C9762B;
+  
+  --color-error: #C53030;
+  --color-success: #2F855A;
+
+  --font-sans: var(--font-sans), sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 1rem)); } /* 1rem is to account for the flex gap, assuming gap-8 (2rem), so half is 1rem */
+}
+
+@keyframes marquee-gallery {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.hover-pause:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+@keyframes slide-up-infinite {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(calc(-50% - 0.5rem)); } /* -0.5rem accounts for half the flex gap */
+}
+
+@keyframes slide-down-infinite {
+  0% { transform: translateY(calc(-50% - 0.5rem)); }
+  100% { transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up-infinite 15s linear infinite;
+}
+
+.animate-slide-down {
+  animation: slide-down-infinite 15s linear infinite;
+}
+
+.hover-pause-vertical:hover .animate-slide-up,
+.hover-pause-vertical:hover .animate-slide-down {
+  animation-play-state: paused;
+}
