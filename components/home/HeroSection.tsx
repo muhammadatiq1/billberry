@@ -36,17 +36,16 @@ export default function HeroSection() {
           {/* Left Content */}
           <div className="w-full lg:w-[45%] flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl lg:text-[3.75rem] font-sans font-bold text-primary leading-[1.05] tracking-tight mb-6">
-              Turn Your Health <br className="hidden lg:block" /> 
-              Goals into <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1B9C8A] to-[#2E86C1]">Reality</span> <br className="hidden lg:block" /> 
-              with Expert Care
+              Advanced Medical <br className="hidden lg:block" /> 
+              Billing Care for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1B9C8A] to-[#2E86C1]">Your Facility</span> <br className="hidden lg:block" /> 
             </h1>
             <p className="text-gray-500 text-[17px] max-w-md leading-relaxed mb-10">
-              Discover a new standard of medical excellence. Let our world-class professionals guide you to optimal health with compassionate, cutting-edge care.
+              Billberry delivers seamless solutions to safeguard revenue, maximize reimbursements, minimize errors, and ensure faster payments.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-14">
               <Link href="/book" className="bg-primary hover:bg-[#0c233f] text-white px-8 py-3.5 rounded-full font-semibold transition-all shadow-[0_8px_20px_rgba(12,35,63,0.15)] hover:shadow-[0_10px_25px_rgba(12,35,63,0.2)] hover:-translate-y-0.5">
-                Book Appointment
+                Book Discovery Call
               </Link>
               <Link href="/services" className="bg-white hover:bg-gray-50 text-primary border border-gray-200 px-8 py-3.5 rounded-full font-semibold transition-all shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
                 Explore Services
@@ -69,7 +68,7 @@ export default function HeroSection() {
                   <Star size={14} className="fill-current" />
                 </div>
                 <p className="text-gray-500 text-[14px] leading-tight">
-                  Join <strong className="text-primary font-bold">20,000+ Patients</strong> today
+                  Join <strong className="text-primary font-bold">500+ Healthcare Providers</strong> today
                 </p>
               </div>
             </div>

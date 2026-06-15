@@ -4,122 +4,77 @@ import { useState } from "react";
 import Link from "next/link";
 import { 
   ClipboardList, 
-  Pill, 
   Activity, 
-  HeartPulse, 
-  BrainCircuit, 
-  Moon, 
-  Waves, 
   ShieldAlert, 
-  Brain, 
   Users, 
-  Flower2, 
   Stethoscope, 
   HeartHandshake, 
-  Dna,
   ArrowRight,
-  ChevronLeft,
-  ChevronRight
+  Briefcase,
+  FileText,
+  PhoneCall,
+  Database,
+  Building2,
+  BadgeCheck,
+  LineChart
 } from "lucide-react";
 
 const services = [
   {
-    title: "Psychiatric Evaluations",
-    desc: "Comprehensive psychiatric assessments designed to clarify diagnoses, understand symptoms, and create individualized treatment plans tailored to your goals and needs.",
-    icon: ClipboardList,
-    link: "/services/psychiatric-evaluations",
+    title: "Medical Billing and Coding",
+    desc: "Maximize revenue by up to 30% with accurate coding and streamlined billing processes. We ensure a 98.9% first-pass acceptance rate for faster payments.",
+    icon: FileText,
+    link: "/services/medical-billing-coding",
     color: "#1B9C8A" // Accent Teal
   },
   {
-    title: "Medication Management",
-    desc: "Evidence-based medication management focused on improving symptoms, minimizing side effects, optimizing treatment outcomes, and supporting long-term emotional wellness.",
-    icon: Pill,
-    link: "/services/medication-management",
+    title: "AR & Denial Management",
+    desc: "Our expert team resolves unpaid claims and handles A/R cleanup strategies to recover underpayments and drastically lower your denial rates.",
+    icon: LineChart,
+    link: "/services/ar-denial-management",
     color: "#2E86C1" // Secondary Blue
   },
   {
-    title: "Anxiety & Panic Disorder",
-    desc: "Treatment for generalized anxiety, excessive worry, panic attacks, social anxiety, racing thoughts, and stress-related symptoms that interfere with daily life.",
-    icon: Activity,
-    link: "/services/anxiety-panic-disorder",
+    title: "Physician Credentialing",
+    desc: "Seamless enrollment with Medicare, Medicaid, and commercial payers. We handle the paperwork so your providers can start seeing patients faster.",
+    icon: BadgeCheck,
+    link: "/services/physician-credentialing",
     color: "#E08A3C" // Accent Orange
   },
   {
-    title: "Depression Treatment",
-    desc: "Support for depression, sadness, low motivation, loss of interest, fatigue, emotional numbness, and difficulty functioning at home, work, or school.",
-    icon: HeartPulse,
-    link: "/services/depression-treatment",
-    color: "#E04F5F" // Red
-  },
-  {
-    title: "ADHD Evaluation & Treatment",
-    desc: "Assessment and treatment for attention difficulties, distractibility, executive dysfunction, procrastination, disorganization, time management challenges, and concentration problems.",
-    icon: BrainCircuit,
-    link: "/services/adhd-evaluation",
+    title: "Revenue Cycle Management",
+    desc: "End-to-end RCM solutions designed to optimize your financial performance, improve cash flow, and ensure compliance at every step of the revenue cycle.",
+    icon: Briefcase,
+    link: "/services/revenue-cycle-management",
     color: "#16395E" // Primary Dark Blue
   },
   {
-    title: "Sleep & Insomnia Support",
-    desc: "Treatment for difficulty falling asleep, staying asleep, restless sleep, racing thoughts at bedtime, and sleep-related mental health concerns.",
-    icon: Moon,
-    link: "/services/sleep-insomnia",
-    color: "#6D28D9" // Purple
-  },
-  {
-    title: "Bipolar Disorder Treatment",
-    desc: "Comprehensive evaluation and medication management for bipolar disorder, mood instability, emotional regulation challenges, and recurrent mood episodes.",
-    icon: Waves,
-    link: "/services/bipolar-disorder",
+    title: "Contact Center & Patient Scheduling",
+    desc: "24/7 live patient support, appointment scheduling, and front-desk coordination to improve patient satisfaction and reduce no-show rates.",
+    icon: PhoneCall,
+    link: "/services/contact-center",
     color: "#0284C7" // Light Blue
   },
   {
-    title: "Obsessive Compulsive Disorder",
-    desc: "Treatment for intrusive thoughts, compulsive behaviors, repetitive rituals, excessive checking, contamination fears, and anxiety-driven thought patterns.",
-    icon: ShieldAlert,
-    link: "/services/ocd-treatment",
-    color: "#B45309" // Brown/Orange
+    title: "Electronic Health Records (EHR)",
+    desc: "Secure, HIPAA-compliant EHR implementation and data management solutions tailored to the needs of modern healthcare facilities.",
+    icon: Database,
+    link: "/services/ehr-solutions",
+    color: "#6D28D9" // Purple
   },
   {
-    title: "Schizophrenia & Psychotic Disorders",
-    desc: "Ongoing psychiatric care and medication management for schizophrenia, schizoaffective disorder, psychotic disorders, and other serious mental health conditions.",
-    icon: Brain,
-    link: "/services/schizophrenia",
+    title: "Practice Management Consulting",
+    desc: "Strategic guidance to streamline workflows, reduce administrative burdens, and scale your healthcare practice effectively.",
+    icon: Building2,
+    link: "/services/practice-management",
     color: "#3F6212" // Green
   },
   {
-    title: "Mental Health for Older Adults",
-    desc: "Specialized psychiatric care addressing depression, anxiety, medication concerns, grief, memory-related symptoms, life transitions, and emotional wellness in older adulthood.",
-    icon: Users,
-    link: "/services/older-adults",
-    color: "#1B9C8A" // Accent Teal
-  },
-  {
-    title: "Women's Mental Health",
-    desc: "Support for anxiety, depression, stress, hormonal life transitions, perimenopause-related mood changes, and emotional wellness throughout adulthood.",
-    icon: Flower2,
-    link: "/services/womens-mental-health",
-    color: "#DB2777" // Pink
-  },
-  {
-    title: "Healthcare Worker Burnout",
-    desc: "Mental health support for nurses, physicians, healthcare workers, first responders, and caregivers experiencing chronic stress, compassion fatigue, burnout, and emotional exhaustion.",
-    icon: Stethoscope,
-    link: "/services/healthcare-burnout",
-    color: "#2E86C1" // Secondary Blue
-  },
-  {
-    title: "Caregiver Stress Support",
-    desc: "Helping caregivers navigate stress, overwhelm, guilt, anxiety, grief, and the emotional demands associated with caring for aging parents, spouses, or loved ones.",
-    icon: HeartHandshake,
-    link: "/services/caregiver-support",
-    color: "#E08A3C" // Accent Orange
-  },
-  {
-    title: "Genetic Testing",
-    desc: "When clinically appropriate, pharmacogenomic testing may help identify how your body processes certain psychiatric medications and support more personalized treatment decisions.",
-    icon: Dna,
-    link: "/services/genetic-testing",
-    color: "#16395E" // Primary Dark Blue
+    title: "Compliance & Auditing",
+    desc: "Thorough auditing services to ensure zero compliance errors and protect your practice against regulatory penalties.",
+    icon: ShieldAlert,
+    link: "/services/compliance-auditing",
+    color: "#E04F5F" // Red
   }
 ];
 
@@ -128,7 +83,7 @@ export default function ServicesSection() {
   const marqueeItems = [...services, ...services];
 
   return (
-    <section className="py-28 bg-[#F8FAFC] overflow-hidden">
+    <section id="services" className="py-24 bg-gray-50/50 relative overflow-hidden">
       <style>{`
         @keyframes custom-marquee {
           0% { transform: translateX(0); }
@@ -154,7 +109,7 @@ export default function ServicesSection() {
             </span>
           </h2>
           <p className="text-gray-500 text-[17px] leading-relaxed max-w-3xl mx-auto">
-            Avenmind Health Group provides comprehensive psychiatric evaluations, medication management, and personalized mental health care for adolescents, adults, and older adults throughout Florida via secure telehealth.
+            Billberry delivers comprehensive medical billing, coding, and RCM solutions for healthcare practices and facilities, ensuring streamlined operations and maximized revenue.
           </p>
         </div>
         

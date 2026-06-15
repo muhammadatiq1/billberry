@@ -11,7 +11,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Avenmind Health Group | Mental Health Care",
+  title: "Billberry Health Group | Mental Health Care",
   description: "Personalized, evidence-based mental-health care delivered with compassion — helping patients heal, grow, and thrive.",
 };
 

@@ -2,39 +2,39 @@ import React from "react";
 import { AlertCircle } from "lucide-react";
 
 const row1 = [
-  { text: "Long waiting times", icon: "⏳" },
-  { text: "High consultation costs", icon: "💸" },
-  { text: "Travel time wasted", icon: "🚗" },
-  { text: "Confusing paperwork", icon: "📑" },
-  { text: "Risk of infections", icon: "🦠" },
-  { text: "Unclear diagnosis", icon: "🤷" },
+  { text: "High claim denials", icon: "📉" },
+  { text: "Delayed payments", icon: "⏳" },
+  { text: "Coding errors", icon: "❌" },
+  { text: "Unpaid claims", icon: "💸" },
+  { text: "Credentialing delays", icon: "📝" },
+  { text: "Complex regulations", icon: "⚖️" },
 ];
 
 const row2 = [
-  { text: "Language barriers", icon: "🗣️" },
-  { text: "Inconsistent care quality", icon: "📉" },
-  { text: "Unavailable doctors", icon: "👨‍⚕️" },
-  { text: "Lack of empathy", icon: "❤️‍🩹" },
-  { text: "Slow responses", icon: "🐢" },
-  { text: "Hidden charges", icon: "💳" },
+  { text: "Low first-pass rates", icon: "📉" },
+  { text: "Missing patient data", icon: "❓" },
+  { text: "Staff turnover", icon: "🚪" },
+  { text: "Compliance risks", icon: "⚠️" },
+  { text: "Software issues", icon: "💻" },
+  { text: "Poor AR management", icon: "📂" },
 ];
 
 const row3 = [
-  { text: "Rushed consultations", icon: "⏱️" },
-  { text: "Delayed test reports", icon: "📊" },
-  { text: "Lost medical records", icon: "📂" },
-  { text: "Limited appointments", icon: "🗓️" },
-  { text: "Outdated facilities", icon: "🏢" },
-  { text: "Hard to reach staff", icon: "📞" },
+  { text: "Wasted administrative time", icon: "⏱️" },
+  { text: "Audit anxiety", icon: "😰" },
+  { text: "Changing payer rules", icon: "🔄" },
+  { text: "Decreasing margins", icon: "🔻" },
+  { text: "Slow authorizations", icon: "🐢" },
+  { text: "Manual data entry", icon: "⌨️" },
 ];
 
 const row4 = [
-  { text: "Poor patient experience", icon: "😞" },
-  { text: "Lack of privacy", icon: "🔒" },
-  { text: "Limited support staff", icon: "🤝" },
-  { text: "No follow-ups", icon: "❌" },
-  { text: "Confusing prescriptions", icon: "💊" },
-  { text: "Uncomfortable waiting rooms", icon: "🪑" },
+  { text: "Lack of reporting", icon: "📊" },
+  { text: "Unexpected fee schedules", icon: "🧾" },
+  { text: "Difficult payer follow-ups", icon: "📞" },
+  { text: "Underpayments", icon: "💵" },
+  { text: "Inconsistent cash flow", icon: "🌊" },
+  { text: "Provider burnout", icon: "🔥" },
 ];
 
 function Pill({ text, icon }: { text: string; icon: string }) {
@@ -88,7 +88,7 @@ export default function StrugglesSection() {
         
         {/* Subheading */}
         <p className="text-gray-500 text-[17px] max-w-2xl text-center">
-          Long waiting times, limited access to specialists, and unclear reports often leave patients frustrated and disconnected from their own health journey.
+          High claim denials, complicated payer rules, and delayed reimbursements often leave medical practices struggling with inconsistent cash flow and administrative burnout.
         </p>
 
       </div>

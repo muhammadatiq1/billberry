@@ -12,14 +12,14 @@ export default function Footer() {
           {/* Left Column: Logo, Desc, Newsletter */}
           <div className="flex flex-col gap-6 lg:w-1/3 xl:w-1/4">
             <Image 
-              src="/Images/logo%202%20aven.svg" 
-              alt="Avenmind Health Group" 
+              src="/Images/logo/1.svg" 
+              alt="Billberry Health Group" 
               width={200} 
               height={50} 
               className="h-10 w-auto mb-2"
             />
             <p className="text-gray-500 text-[14px] leading-relaxed pr-8">
-              Modern medical tools designed to help patients manage health, automate care workflows, and grow with confidence.
+              Modern RCM solutions designed to help practices manage billing, automate revenue workflows, and grow with confidence.
             </p>
             
             <div className="mt-2">
@@ -43,11 +43,11 @@ export default function Footer() {
             {/* Services */}
             <div className="flex flex-col gap-4">
               <h4 className="text-primary font-bold text-[16px] mb-2">Services</h4>
-              <Link href="/services/primary-care" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Primary Care</Link>
-              <Link href="/services/mental-health" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Mental Health</Link>
-              <Link href="/services/specialty" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Specialty</Link>
-              <Link href="/services/labs" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Lab Testing</Link>
-              <Link href="/telehealth" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Telehealth</Link>
+              <Link href="/services/medical-billing" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Medical Billing</Link>
+              <Link href="/services/ar-management" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">AR Management</Link>
+              <Link href="/services/credentialing" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Credentialing</Link>
+              <Link href="/services/practice-management" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Practice Management</Link>
+              <Link href="/services/ehr-solutions" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">EHR Solutions</Link>
             </div>
 
             {/* Company */}
@@ -64,8 +64,8 @@ export default function Footer() {
             <div className="flex flex-col gap-4">
               <h4 className="text-primary font-bold text-[16px] mb-2">Resources</h4>
               <Link href="/help" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Help Center</Link>
-              <Link href="/faq" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Patient FAQ</Link>
-              <Link href="/portal" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Patient Portal</Link>
+              <Link href="/faq" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Provider FAQ</Link>
+              <Link href="/portal" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Client Portal</Link>
               <Link href="/privacy" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Privacy Policy</Link>
               <Link href="/terms" className="text-[14px] text-gray-500 font-medium hover:text-[#1B9C8A] transition-colors">Terms of Service</Link>
             </div>
@@ -85,7 +85,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex justify-between items-start gap-6 py-6 border-t border-gray-300">
           <div className="text-[15px] text-primary font-medium pt-1">
-            © {new Date().getFullYear()} Avenmind. All rights reserved.
+            © {new Date().getFullYear()} Billberry. All rights reserved.
           </div>
           <div className="flex flex-col gap-2 text-[15px] text-primary font-medium items-end text-right">
             <Link href="/privacy" className="hover:text-[#1B9C8A] transition-colors">Privacy Policy</Link>
@@ -99,7 +99,7 @@ export default function Footer() {
       {/* Massive Background Text Watermark */}
       <div className="absolute bottom-[-4%] lg:bottom-[-12%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-0 overflow-hidden flex justify-center">
         <h1 className="text-[140px] sm:text-[200px] md:text-[280px] lg:text-[350px] font-black text-[#f1f5f9] tracking-tighter leading-none whitespace-nowrap">
-          Avenmind
+          Billberry
         </h1>
       </div>
     </div>

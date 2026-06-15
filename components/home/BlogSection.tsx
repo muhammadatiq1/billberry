@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function BlogSection() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section id="blog" className="py-24 bg-white overflow-hidden">
       <div className="mx-auto max-w-[1300px] px-4 sm:px-6 lg:px-8">
         
         {/* Top Header */}
