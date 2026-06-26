@@ -14,8 +14,8 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
   return (
     <div className="min-h-screen bg-bg">
-      <ServiceDetailHero service={service} />
-      <ServiceDetailContent service={service} />
+      <ServiceDetailHero slug={resolvedParams.slug} />
+      <ServiceDetailContent slug={resolvedParams.slug} />
     </div>
   );
 }

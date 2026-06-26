@@ -156,10 +156,6 @@ export default function Header() {
                 </div>
               </div>
             </div>
-
-            <Link href="/blog" className="flex items-center h-full hover:text-accent-teal transition-colors border-b-[3px] border-transparent">
-              Blog
-            </Link>
             <Link href="/contact" className="flex items-center h-full hover:text-accent-teal transition-colors border-b-[3px] border-transparent">
               Contact
             </Link>
@@ -237,7 +233,6 @@ export default function Header() {
             </div>
           </div>
 
-          <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className="text-[17px] font-medium text-primary hover:text-accent-teal py-2">Blog</Link>
           <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-[17px] font-medium text-primary hover:text-accent-teal py-2">Contact</Link>
 
           <div className="pt-6 mt-2">

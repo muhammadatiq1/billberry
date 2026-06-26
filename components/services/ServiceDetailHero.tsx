@@ -3,9 +3,12 @@ import React from "react";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
-import { globalStats } from "@/lib/services-data";
+import { globalStats, servicesData } from "@/lib/services-data";
 
-export default function ServiceDetailHero({ service }: { service: any }) {
+export default function ServiceDetailHero({ slug }: { slug: string }) {
+  const service = servicesData.find(s => s.slug === slug);
+  if (!service) return null;
+  
   const Icon = service.icon;
 
   const fadeUp = {

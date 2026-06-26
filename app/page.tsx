@@ -4,7 +4,6 @@ import AboutSection from "@/components/home/AboutSection";
 import PartnersSection from "@/components/home/PartnersSection";
 import ServicesSection from "@/components/home/ServicesSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
-import BlogSection from "@/components/home/BlogSection";
 import CtaSection from "@/components/home/CtaSection";
 import TrustBadges from "@/components/home/TrustBadges";
 import LeadMagnet from "@/components/home/LeadMagnet";
@@ -21,7 +20,6 @@ export default function Home() {
       <TestimonialsSection />
       <CtaSection />
       <LeadMagnet />
-      <BlogSection />
     </div>
   );
 }

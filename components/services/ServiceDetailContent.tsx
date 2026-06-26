@@ -9,10 +9,13 @@ import {
   specialtiesList, 
   expertiseList,
   testimonials,
-  faqs
+  faqs,
+  servicesData
 } from "@/lib/services-data";
 
-export default function ServiceDetailContent({ service }: { service: any }) {
+export default function ServiceDetailContent({ slug }: { slug: string }) {
+  const service = servicesData.find(s => s.slug === slug);
+  if (!service) return null;
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
