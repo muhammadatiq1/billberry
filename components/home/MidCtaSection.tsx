@@ -25,7 +25,7 @@ export default function MidCtaSection() {
                 <span className="relative text-white">Mental Health</span>
               </span>
             </h2>
-            <Link href="/book" className="shrink-0 bg-accent-teal hover:bg-[#15806E] text-white px-8 py-4 rounded-sm font-semibold transition-colors shadow-lg text-sm tracking-wide">
+            <Link href="/contact" className="shrink-0 bg-accent-teal hover:bg-[#15806E] text-white px-8 py-4 rounded-sm font-semibold transition-colors shadow-lg text-sm tracking-wide">
               Book a Visit
             </Link>
           </div>

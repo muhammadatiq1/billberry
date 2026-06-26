@@ -1,112 +1,68 @@
 import React from "react";
-import { AlertCircle } from "lucide-react";
+import { 
+  AlertCircle, 
+  TrendingDown, 
+  Clock, 
+  XCircle, 
+  Banknote, 
+  ClipboardList, 
+  Scale, 
+  Activity, 
+  Users, 
+  ShieldAlert, 
+  Timer, 
+  Search, 
+  Coins 
+} from "lucide-react";
 
-const row1 = [
-  { text: "High claim denials", icon: "📉" },
-  { text: "Delayed payments", icon: "⏳" },
-  { text: "Coding errors", icon: "❌" },
-  { text: "Unpaid claims", icon: "💸" },
-  { text: "Credentialing delays", icon: "📝" },
-  { text: "Complex regulations", icon: "⚖️" },
+const struggles = [
+  { text: "High claim denials", icon: TrendingDown },
+  { text: "Delayed payments", icon: Clock },
+  { text: "Coding errors", icon: XCircle },
+  { text: "Unpaid claims", icon: Banknote },
+  { text: "Credentialing delays", icon: ClipboardList },
+  { text: "Complex regulations", icon: Scale },
+  { text: "Low first-pass rates", icon: Activity },
+  { text: "Staff turnover", icon: Users },
+  { text: "Compliance risks", icon: ShieldAlert },
+  { text: "Wasted administrative time", icon: Timer },
+  { text: "Audit anxiety", icon: Search },
+  { text: "Underpayments", icon: Coins }
 ];
-
-const row2 = [
-  { text: "Low first-pass rates", icon: "📉" },
-  { text: "Missing patient data", icon: "❓" },
-  { text: "Staff turnover", icon: "🚪" },
-  { text: "Compliance risks", icon: "⚠️" },
-  { text: "Software issues", icon: "💻" },
-  { text: "Poor AR management", icon: "📂" },
-];
-
-const row3 = [
-  { text: "Wasted administrative time", icon: "⏱️" },
-  { text: "Audit anxiety", icon: "😰" },
-  { text: "Changing payer rules", icon: "🔄" },
-  { text: "Decreasing margins", icon: "🔻" },
-  { text: "Slow authorizations", icon: "🐢" },
-  { text: "Manual data entry", icon: "⌨️" },
-];
-
-const row4 = [
-  { text: "Lack of reporting", icon: "📊" },
-  { text: "Unexpected fee schedules", icon: "🧾" },
-  { text: "Difficult payer follow-ups", icon: "📞" },
-  { text: "Underpayments", icon: "💵" },
-  { text: "Inconsistent cash flow", icon: "🌊" },
-  { text: "Provider burnout", icon: "🔥" },
-];
-
-function Pill({ text, icon }: { text: string; icon: string }) {
-  return (
-    <div className="bg-white border border-gray-100 rounded-full px-6 py-3 flex items-center gap-3 shadow-[0_2px_10px_rgba(0,0,0,0.02)] text-[15px] font-medium text-gray-700 whitespace-nowrap mx-2">
-      <span className="text-lg">{icon}</span>
-      <span>{text}</span>
-    </div>
-  );
-}
-
-function MarqueeRow({ items, reverse = false, speed = "40s" }: { items: any[]; reverse?: boolean; speed?: string }) {
-  return (
-    <div className="flex w-max" style={{ animation: `marquee ${speed} linear infinite ${reverse ? 'reverse' : 'normal'}` }}>
-      {/* First set */}
-      <div className="flex items-center">
-        {items.map((item, idx) => (
-          <Pill key={idx} text={item.text} icon={item.icon} />
-        ))}
-      </div>
-      {/* Duplicated set for infinite scroll */}
-      <div className="flex items-center">
-        {items.map((item, idx) => (
-          <Pill key={`dup-${idx}`} text={item.text} icon={item.icon} />
-        ))}
-      </div>
-    </div>
-  );
-}
 
 export default function StrugglesSection() {
   return (
-    <section className="py-24 bg-[#FAFAFA] overflow-hidden">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center mb-16 relative z-10">
+    <section className="py-24 bg-bg border-t border-border overflow-hidden">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         
-        {/* Top Badge */}
-        <div className="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full shadow-sm border border-gray-100 mb-6">
+        <div className="inline-flex items-center gap-2 bg-surface px-4 py-1.5 rounded-md shadow-sm border border-border mb-6">
           <AlertCircle size={16} className="text-[#E04F5F]" />
-          <span className="text-sm font-semibold text-gray-700">Common struggles</span>
+          <span className="text-sm font-semibold text-text">Common Industry Struggles</span>
         </div>
 
-        {/* Heading */}
-        <h2 className="text-4xl lg:text-[3.25rem] font-sans font-bold text-primary leading-[1.1] tracking-tight mb-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
-          What are you
-          <span className="relative inline-block px-5 py-1.5">
-            <span className="absolute inset-0 bg-accent-teal rounded-xl"></span>
-            <span className="relative text-white">Struggling</span>
-          </span>
-          with?
+        <h2 className="text-4xl font-bold text-text leading-tight tracking-tight mb-6 text-center">
+          What are you struggling with?
         </h2>
         
-        {/* Subheading */}
-        <p className="text-gray-500 text-[17px] max-w-2xl text-center">
+        <p className="text-text-muted text-[17px] max-w-2xl text-center mb-16">
           High claim denials, complicated payer rules, and delayed reimbursements often leave medical practices struggling with inconsistent cash flow and administrative burnout.
         </p>
 
-      </div>
-
-      {/* Marquee Area */}
-      <div className="relative w-full max-w-[1600px] mx-auto">
-        {/* Fade Out Masks (Left and Right) */}
-        <div className="absolute inset-y-0 left-0 w-32 lg:w-64 bg-gradient-to-r from-[#FAFAFA] to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute inset-y-0 right-0 w-32 lg:w-64 bg-gradient-to-l from-[#FAFAFA] to-transparent z-10 pointer-events-none"></div>
-        
-        <div className="flex flex-col gap-5 py-4 w-full overflow-hidden">
-          <MarqueeRow items={row1} speed="45s" />
-          <MarqueeRow items={row2} speed="55s" reverse={true} />
-          <MarqueeRow items={row3} speed="40s" />
-          <MarqueeRow items={row4} speed="50s" reverse={true} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 w-full">
+          {struggles.map((struggle, idx) => {
+            const Icon = struggle.icon;
+            return (
+              <div key={idx} className="bg-surface border border-border rounded-lg px-6 py-4 flex items-center gap-4 shadow-sm hover:border-accent-teal/50 transition-colors">
+                <div className="text-[#E04F5F]/80">
+                  <Icon size={24} strokeWidth={1.5} />
+                </div>
+                <span className="text-[15px] font-semibold text-text">{struggle.text}</span>
+              </div>
+            );
+          })}
         </div>
+
       </div>
-      
     </section>
   );
 }

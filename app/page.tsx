@@ -6,17 +6,21 @@ import ServicesSection from "@/components/home/ServicesSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import BlogSection from "@/components/home/BlogSection";
 import CtaSection from "@/components/home/CtaSection";
+import TrustBadges from "@/components/home/TrustBadges";
+import LeadMagnet from "@/components/home/LeadMagnet";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full bg-white">
+    <div className="flex flex-col w-full bg-surface">
       <HeroSection />
+      <TrustBadges />
       <StrugglesSection />
       <AboutSection />
       <PartnersSection />
       <ServicesSection />
       <TestimonialsSection />
       <CtaSection />
+      <LeadMagnet />
       <BlogSection />
     </div>
   );

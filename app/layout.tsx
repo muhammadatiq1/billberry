@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { Providers } from "./providers";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -11,8 +12,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Billberry Health Group | Mental Health Care",
-  description: "Personalized, evidence-based mental-health care delivered with compassion — helping patients heal, grow, and thrive.",
+  title: "Billberry | Medical Billing Management",
+  description: "Enterprise-grade medical billing, revenue cycle management, and healthcare financial solutions.",
 };
 
 export default function RootLayout({
@@ -24,11 +25,16 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${plusJakartaSans.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col font-sans">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+      <body className="min-h-full flex flex-col font-sans bg-[#F8FAFC]">
+        <Providers>
+          <Header />
+          <main className="flex-1 min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

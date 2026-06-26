@@ -23,8 +23,9 @@
   --font-sans: var(--font-sans), sans-serif;
 }
 
+
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-surface);
   color: var(--color-text);
 }
 
