@@ -29,9 +29,9 @@ export default function ServiceDetailContent({ slug }: { slug: string }) {
           <div className="flex flex-col gap-24">
             {service.contentSections.map((section: any, idx: number) => {
               const localImages = [
-                "/images/services/medical-1.png",
-                "/images/services/medical-2.png",
-                "/images/services/medical-3.png"
+                "/Images/services/medical-1.png",
+                "/Images/services/medical-2.png",
+                "/Images/services/medical-3.png"
               ];
               const imageSrc = localImages[idx % localImages.length];
 
