@@ -32,7 +32,7 @@ export default function AboutVision() {
               We come from different cultures and walks of life, but we're all driven by one shared purpose—helping healthcare providers grow through trust, teamwork, and reliable solutions. These values make our Medical Billing Services stand out and create lasting impact.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              Billberry delivers flexible, consistent services that support providers worldwide. This allows our clients to fully focus on delivering outstanding care, while we expertly manage their billing needs. Every success story motivates us to discover new ways to increase revenue and improve day-to-day operations.
+              berrybilling delivers flexible, consistent services that support providers worldwide. This allows our clients to fully focus on delivering outstanding care, while we expertly manage their billing needs. Every success story motivates us to discover new ways to increase revenue and improve day-to-day operations.
             </p>
             <motion.div 
               whileHover={{ x: 10 }}
@@ -58,7 +58,7 @@ export default function AboutVision() {
               Inspired by a clear vision and an unstoppable commitment to your success, we place excellence at the core of everything we do. Our team doesn't just meet expectations—we constantly redefine them. From meticulous quality control to continuous professional development, we leave no stone unturned in our pursuit of perfection. 
             </p>
             <p className="text-gray-300 leading-relaxed relative z-10">
-              As a leading company with exceptional accomplishments, Billberry prioritizes staying constantly connected with the evolving dynamics to gain valuable insights into clients' needs. Our informed decisions, predictable analytics, and unparalleled achievements establish us as the most reliable company in the USA. We're not here to play it safe—we're here to set the standard.
+              As a leading company with exceptional accomplishments, berrybilling prioritizes staying constantly connected with the evolving dynamics to gain valuable insights into clients' needs. Our informed decisions, predictable analytics, and unparalleled achievements establish us as the most reliable company in the USA. We're not here to play it safe—we're here to set the standard.
             </p>
           </motion.div>
         </div>

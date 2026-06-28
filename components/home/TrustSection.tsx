@@ -33,7 +33,7 @@ export default function TrustSection() {
           <div className="bg-primary text-white p-8 md:p-12 rounded-2xl relative">
             <div className="text-6xl font-serif text-accent-teal absolute top-6 left-6 opacity-30">&quot;</div>
             <blockquote className="relative z-10 text-lg md:text-xl font-serif leading-relaxed mb-6 italic">
-              Billberry transformed our revenue cycle. Their expert billing team significantly reduced our denial rate and recovered thousands in underpayments within the first quarter.
+              berrybilling transformed our revenue cycle. Their expert billing team significantly reduced our denial rate and recovered thousands in underpayments within the first quarter.
             </blockquote>
             <div className="flex items-center gap-2 text-accent-green">
               {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}

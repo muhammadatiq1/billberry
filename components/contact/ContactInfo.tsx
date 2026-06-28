@@ -50,7 +50,16 @@ export default function ContactInfo() {
           </div>
           <div>
             <h3 className="font-bold text-primary text-lg mb-1">Email</h3>
-            <a href="mailto:infoberrybillings@gmail.com" className="text-gray-600 hover:text-accent-teal transition-colors text-[15px]">infoberrybillings@gmail.com</a>
+            <div className="flex flex-col gap-2">
+              <div>
+                <span className="font-semibold text-gray-800 text-[14px]">Sales: </span>
+                <a href="mailto:Sales@berrybillingsllc.com" className="text-gray-600 hover:text-accent-teal transition-colors text-[14px]">Sales@berrybillingsllc.com</a>
+              </div>
+              <div>
+                <span className="font-semibold text-gray-800 text-[14px]">Info: </span>
+                <a href="mailto:Info@berrybillings.com" className="text-gray-600 hover:text-accent-teal transition-colors text-[14px]">Info@berrybillings.com</a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -60,7 +69,7 @@ export default function ContactInfo() {
           </div>
           <div>
             <h3 className="font-bold text-primary text-lg mb-1">Phone</h3>
-            <a href="tel:5122706926" className="text-gray-600 hover:text-accent-teal transition-colors text-[15px]">512-270-6926</a>
+            <a href="tel:12345678910" className="text-gray-600 hover:text-accent-teal transition-colors text-[15px]">12345678910</a>
           </div>
         </div>
 

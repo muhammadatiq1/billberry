@@ -4,6 +4,12 @@ import { servicesData } from "@/lib/services-data";
 import ServiceDetailHero from "@/components/services/ServiceDetailHero";
 import ServiceDetailContent from "@/components/services/ServiceDetailContent";
 
+export async function generateStaticParams() {
+  return servicesData.map((service) => ({
+    slug: service.slug,
+  }));
+}
+
 export default async function ServiceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const service = servicesData.find(s => s.slug === resolvedParams.slug);

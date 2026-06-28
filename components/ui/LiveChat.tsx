@@ -28,7 +28,7 @@ export function LiveChat() {
         {/* Chat Header */}
         <div className="bg-primary p-4 flex items-center justify-between text-white">
           <div className="flex flex-col">
-            <span className="font-bold text-sm">Billberry Support</span>
+            <span className="font-bold text-sm">berrybilling Support</span>
             <span className="text-xs text-white/80 flex items-center gap-1">
               <span className="w-2 h-2 rounded-full bg-green-400"></span>
               Typically replies in minutes

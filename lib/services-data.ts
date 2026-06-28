@@ -202,7 +202,7 @@ export const servicesData = [
         title: "Why Accounts Receivable Piles Up",
         paragraphs: [
           "Accounts Receivable can quickly spiral out of control due to coding errors, lack of timely follow-up, and complex payer rules. When staff are overwhelmed with daily operations, older claims are often abandoned, leading to massive revenue leakage.",
-          "Billberry’s specialized A/R team acts as an extension of your practice. We systematically work through your aging buckets, starting with the highest-value and oldest claims, to inject cash back into your practice."
+          "berrybilling’s specialized A/R team acts as an extension of your practice. We systematically work through your aging buckets, starting with the highest-value and oldest claims, to inject cash back into your practice."
         ]
       },
       {
@@ -239,7 +239,7 @@ export const servicesData = [
         title: "The Cost of Delayed Credentialing",
         paragraphs: [
           "Every day a provider is not fully credentialed is a day of lost revenue. The process is notoriously complex, involving mountains of paperwork, stringent deadlines, and endless follow-ups with insurance panels.",
-          "Billberry assumes complete responsibility for this process. We meticulously gather provider data, submit flawless applications, and aggressively follow up with payers to expedite approvals."
+          "berrybilling assumes complete responsibility for this process. We meticulously gather provider data, submit flawless applications, and aggressively follow up with payers to expedite approvals."
         ]
       },
       {
@@ -281,7 +281,7 @@ export const servicesData = [
       {
         title: "What is True End-to-End RCM?",
         paragraphs: [
-          "Many billing companies only handle the middle portion of the revenue cycle—submitting claims. Billberry manages the entire lifecycle.",
+          "Many billing companies only handle the middle portion of the revenue cycle—submitting claims. berrybilling manages the entire lifecycle.",
           "We start before the patient even arrives by verifying eligibility and securing prior authorizations. We continue through accurate coding, rapid claim submission, payment posting, and finally, patient statement generation and collections."
         ]
       },
@@ -318,7 +318,7 @@ export const servicesData = [
       {
         title: "Relieving Your Front Desk",
         paragraphs: [
-          "An overwhelmed front desk leads to long hold times, frustrated patients, and costly administrative errors. By outsourcing your incoming calls and scheduling to Billberry, your in-house staff can focus entirely on the patients physically present in your clinic.",
+          "An overwhelmed front desk leads to long hold times, frustrated patients, and costly administrative errors. By outsourcing your incoming calls and scheduling to berrybilling, your in-house staff can focus entirely on the patients physically present in your clinic.",
           "Our trained healthcare representatives act as a seamless extension of your practice, using your protocols and EHR systems to schedule appointments accurately."
         ]
       },
@@ -356,7 +356,7 @@ export const servicesData = [
         title: "Bridging Clinical and Financial Data",
         paragraphs: [
           "An EHR system is only as good as its implementation. Poorly configured EHRs lead to physician burnout, inaccurate coding, and delayed billing.",
-          "Billberry ensures that your EHR is perfectly synchronized with your practice management and billing systems. We customize templates to match your specific specialty, ensuring that clinical documentation naturally supports the highest level of coding accuracy."
+          "berrybilling ensures that your EHR is perfectly synchronized with your practice management and billing systems. We customize templates to match your specific specialty, ensuring that clinical documentation naturally supports the highest level of coding accuracy."
         ]
       },
       {
@@ -392,7 +392,7 @@ export const servicesData = [
       {
         title: "Comprehensive Operational Audits",
         paragraphs: [
-          "Many practices leak revenue through inefficient workflows and outdated administrative processes. Billberry conducts a deep-dive analysis into your daily operations, from the front desk to the back office.",
+          "Many practices leak revenue through inefficient workflows and outdated administrative processes. berrybilling conducts a deep-dive analysis into your daily operations, from the front desk to the back office.",
           "We identify redundancies, evaluate your technology stack, and assess staff utilization to pinpoint exactly where you are losing time and money."
         ]
       },
@@ -430,7 +430,7 @@ export const servicesData = [
         title: "Proactive Risk Mitigation",
         paragraphs: [
           "In the current regulatory environment, ignorance is not an excuse. Government agencies and commercial payers are aggressively auditing practices, and the penalties for non-compliance can be devastating.",
-          "Billberry conducts proactive, randomized chart audits to ensure that your clinical documentation fully supports the codes being billed. We identify patterns of up-coding or down-coding and correct them before external auditors do."
+          "berrybilling conducts proactive, randomized chart audits to ensure that your clinical documentation fully supports the codes being billed. We identify patterns of up-coding or down-coding and correct them before external auditors do."
         ]
       },
       {

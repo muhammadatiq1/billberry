@@ -49,8 +49,8 @@ export default function AboutSection() {
             
             <div className="w-[85%] h-[400px] lg:h-[500px] rounded-2xl overflow-hidden ml-auto relative z-10 flex items-center justify-center bg-bg border border-border shadow-sm p-12">
               <img 
-                src="/Images/logo/1.svg" 
-                alt="Billberry Logo" 
+                src="/Images/logo/logo main.svg" 
+                alt="berrybilling Logo" 
                 className="w-full h-auto object-contain"
               />
             </div>

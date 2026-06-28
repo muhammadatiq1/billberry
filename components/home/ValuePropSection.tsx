@@ -10,7 +10,7 @@ export default function ValuePropSection() {
           {/* Header Block (Col 1, Row 1) */}
           <div className="flex flex-col justify-center pr-8 pb-8 lg:pb-0">
             <h2 className="text-[2.5rem] lg:text-[3.5rem] leading-[1.1] font-serif font-bold text-primary mb-6 tracking-tight drop-shadow-sm">
-              Why<br />Choose<br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-teal">Billberry</span>
+              Why<br />Choose<br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-teal">berrybilling</span>
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed">
               This isn't just a billing service. It's a transformation for your facility's financial health.

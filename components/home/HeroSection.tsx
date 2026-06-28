@@ -44,7 +44,7 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-gray-300 text-[18px] lg:text-[20px] max-w-2xl leading-relaxed mb-10">
-            Billberry delivers seamless solutions to safeguard revenue, maximize reimbursements, minimize errors, and ensure faster payments.
+            berrybilling delivers seamless solutions to safeguard revenue, maximize reimbursements, minimize errors, and ensure faster payments.
           </p>
 
           <div className="flex flex-wrap items-center gap-4">

@@ -31,7 +31,7 @@ export default function CtaSection() {
         </h2>
         
         <p className="text-text-muted text-[17px] max-w-lg text-center mb-8">
-          Partner with Billberry to streamline your medical billing, lower your denial rates, and recover lost revenue faster than ever.
+          Partner with berrybilling to streamline your medical billing, lower your denial rates, and recover lost revenue faster than ever.
         </p>
 
         <Link 

@@ -73,8 +73,8 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
               <Image 
-                src="/Images/logo/1.svg" 
-                alt="Billberry" 
+                src="/Images/logo/logo main.svg" 
+                alt="berrybilling" 
                 width={300} 
                 height={80} 
                 priority

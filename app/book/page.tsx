@@ -62,7 +62,7 @@ export default function BookPage() {
                 <span className="font-semibold text-primary">Contact</span>
               </div>
               <p className="text-[14px] text-gray-700">
-                Call <strong className="text-accent-teal">512-270-6926</strong> for Billing assistance
+                Call <strong className="text-accent-teal">12345678910</strong> for Billing assistance
               </p>
             </div>
           </div>

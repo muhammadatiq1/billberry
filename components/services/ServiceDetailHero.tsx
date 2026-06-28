@@ -70,7 +70,7 @@ export default function ServiceDetailHero({ slug }: { slug: string }) {
           <motion.div initial="hidden" animate="visible" variants={fadeLeft} className="lg:pl-12 flex flex-col justify-center">
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-10 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent-teal/20 rounded-full blur-3xl -mr-10 -mt-10"></div>
-              <h3 className="text-2xl font-bold text-white mb-8 text-center relative z-10">Billberry by the Numbers</h3>
+              <h3 className="text-2xl font-bold text-white mb-8 text-center relative z-10">berrybilling by the Numbers</h3>
               <div className="grid grid-cols-2 gap-8 relative z-10">
                 {globalStats.map((stat, idx) => (
                   <div key={idx} className="text-center">
@@ -81,7 +81,7 @@ export default function ServiceDetailHero({ slug }: { slug: string }) {
               </div>
               <div className="mt-10 pt-8 border-t border-white/10 text-center relative z-10">
                 <p className="text-white font-bold text-lg italic">
-                  "Thousands of providers growing their practice with Billberry. Now It's Your Turn!"
+                  "Thousands of providers growing their practice with berrybilling. Now It's Your Turn!"
                 </p>
               </div>
             </div>

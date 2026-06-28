@@ -154,7 +154,7 @@ export default function ServiceDetailContent({ slug }: { slug: string }) {
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
               <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">We're here to help</h2>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-                We're available 24/7. Schedule a call with one of our experts now to see how Billberry can revolutionize your revenue cycle.
+                We're available 24/7. Schedule a call with one of our experts now to see how berrybilling can revolutionize your revenue cycle.
               </p>
               
               <div className="flex flex-col gap-6">
@@ -164,7 +164,7 @@ export default function ServiceDetailContent({ slug }: { slug: string }) {
                   </div>
                   <div>
                     <div className="text-sm text-gray-500 font-medium">Call Us Anytime</div>
-                    <div className="text-2xl font-bold text-primary">512-270-6926</div>
+                    <div className="text-2xl font-bold text-primary">12345678910</div>
                   </div>
                 </div>
                 
@@ -174,7 +174,8 @@ export default function ServiceDetailContent({ slug }: { slug: string }) {
                   </div>
                   <div>
                     <div className="text-sm text-gray-500 font-medium">Email Us</div>
-                    <div className="text-xl font-bold text-primary">infoberrybillings@gmail.com</div>
+                    <div className="text-sm font-bold text-primary truncate"><span className="text-gray-500 font-medium mr-1">Sales:</span>Sales@berrybillingsllc.com</div>
+                    <div className="text-sm font-bold text-primary truncate"><span className="text-gray-500 font-medium mr-1">Info:</span>Info@berrybillings.com</div>
                   </div>
                 </div>
               </div>

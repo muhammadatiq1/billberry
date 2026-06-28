@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     rating: 4.9,
-    text: "Our revenue cycle process is finally smooth. It's motivating to see how much our denials dropped over time. Billberry has a great mix of modern technology and amazing staff.",
+    text: "Our revenue cycle process is finally smooth. It's motivating to see how much our denials dropped over time. berrybilling has a great mix of modern technology and amazing staff.",
     name: "Dr. Sanjay Sharma",
     username: "clinic_owner_68",
   },
@@ -60,7 +60,7 @@ export default function TestimonialsSection() {
             >
               <div className="flex justify-between items-start mb-4">
                 <div className="font-bold text-[16px] text-text">
-                  Billberry
+                  berrybilling
                 </div>
                 <div className="flex items-center gap-1 font-bold text-text-muted text-sm">
                   {t.rating} <Star size={14} className="fill-accent-teal text-accent-teal" />

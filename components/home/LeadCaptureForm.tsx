@@ -10,7 +10,7 @@ export default function LeadCaptureForm() {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     try {
-      await fetch("https://formsubmit.co/ajax/infoberrybillings@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/Info@berrybillings.com", {
         method: "POST",
         body: formData
       });

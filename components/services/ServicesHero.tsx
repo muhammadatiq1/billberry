@@ -23,7 +23,7 @@ export default function ServicesHero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
         >
-          Billberry delivers specialized medical billing, coding, and practice management solutions to maximize your revenue and ensure compliance.
+          berrybilling delivers specialized medical billing, coding, and practice management solutions to maximize your revenue and ensure compliance.
         </motion.p>
       </div>
     </section>

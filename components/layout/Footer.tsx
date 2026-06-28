@@ -12,17 +12,18 @@ export default function Footer() {
           {/* Left Column: Logo, Desc, Newsletter */}
           <div className="flex flex-col gap-6 lg:w-1/3 xl:w-1/4">
             <Image 
-              src="/Images/logo/1.svg" 
-              alt="Billberry" 
+              src="/Images/logo/logo main.svg" 
+              alt="berrybilling" 
               width={200} 
               height={50} 
               className="h-10 w-auto mb-2"
             />
             <p className="text-text-muted text-[14px] leading-relaxed pr-8">
-              Billberry<br/>
+              berrybilling<br/>
               15442 Ventura Blvd STE 201-2613<br/>
               Sherman Oaks, CA 91403<br/><br/>
-              <strong>Email:</strong> infoberrybillings@gmail.com<br/>
+              <strong>Sales:</strong> Sales@berrybillingsllc.com<br/>
+              <strong>Info:</strong> Info@berrybillings.com<br/>
               <strong>Hours:</strong> 7:00 AM – 4:00 PM
             </p>
             
@@ -89,7 +90,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex justify-between items-start gap-6 py-6 border-t border-border mt-8">
           <div className="text-[15px] text-text-muted font-medium pt-1">
-            © {new Date().getFullYear()} Billberry. All rights reserved.
+            © {new Date().getFullYear()} berrybilling. All rights reserved.
           </div>
           <div className="flex flex-col gap-2 text-[15px] text-text-muted font-medium items-end text-right">
             <Link href="/privacy" className="hover:text-[#1B9C8A] transition-colors">Privacy Policy</Link>
@@ -103,7 +104,7 @@ export default function Footer() {
       {/* Massive Background Text Watermark */}
       <div className="absolute bottom-[-4%] lg:bottom-[-12%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-0 overflow-hidden flex justify-center opacity-50">
         <h1 className="text-[100px] sm:text-[150px] md:text-[200px] lg:text-[250px] font-black text-border tracking-tighter leading-none whitespace-nowrap">
-          Billberry
+          berrybilling
         </h1>
       </div>
     </div>

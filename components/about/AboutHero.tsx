@@ -29,7 +29,7 @@ export default function AboutHero() {
         <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-teal/20 border border-accent-teal/30 mb-8 backdrop-blur-sm">
           <ShieldCheck className="w-5 h-5 text-accent-teal" />
           <span className="text-sm font-bold text-accent-teal uppercase tracking-widest">
-            About Billberry
+            About berrybilling
           </span>
         </motion.div>
         
@@ -39,7 +39,7 @@ export default function AboutHero() {
         </motion.h1>
         
         <motion.p variants={itemVariants} className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-16">
-          Billberry is a HIPAA compliant RCM solutions company with more than 12 years of medical billing experience across all specialties. Your Trusted Medical Billing Company for Long-Term Success.
+          berrybilling is a HIPAA compliant RCM solutions company with more than 12 years of medical billing experience across all specialties. Your Trusted Medical Billing Company for Long-Term Success.
         </motion.p>
 
         <motion.div variants={itemVariants} className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">

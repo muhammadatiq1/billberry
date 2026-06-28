@@ -12,7 +12,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Billberry | Medical Billing Management",
+  title: "berrybilling | Medical Billing Management",
   description: "Enterprise-grade medical billing, revenue cycle management, and healthcare financial solutions.",
 };
 

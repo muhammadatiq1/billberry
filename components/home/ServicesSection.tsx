@@ -72,7 +72,7 @@ export default function ServicesSection() {
             Our Specialized Services
           </h2>
           <p className="text-text-muted text-[17px] leading-relaxed">
-            Billberry delivers comprehensive medical billing, coding, and RCM solutions for healthcare practices and facilities, ensuring streamlined operations and maximized revenue.
+            berrybilling delivers comprehensive medical billing, coding, and RCM solutions for healthcare practices and facilities, ensuring streamlined operations and maximized revenue.
           </p>
         </div>
         
